@@ -224,38 +224,17 @@
         <a href="Documento A4 carta de amor moderna blanco.pdf" download="carta_flor.pdf">
             <button class="download-button">Para ti</button>
         </a>
-
-        <!-- Botón para reproducir la canción -->
-        <button id="play-music-button" class="download-button" style="margin-top: 20px;">
-            Reproducir música 🎶
-        </button>
     </div>
 
     <!-- Reproductor de YouTube (oculto) -->
     <iframe
-        id="youtube-player"
         class="youtube-player"
         width="0"
         height="0"
-        src="https://www.youtube.com/embed/ybPNgfNtNLA?start=50&autoplay=0&loop=1&playlist=ybPNgfNtNLA"
+        src="https://www.youtube.com/embed/ybPNgfNtNLA?start=50&autoplay=1&loop=1&playlist=ybPNgfNtNLA"
         frameborder="0"
         allow="autoplay; encrypted-media"
         allowfullscreen>
     </iframe>
-
-    <!-- Script para manejar la reproducción de la canción -->
-    <script>
-        // Obtener el botón y el reproductor de YouTube
-        const playMusicButton = document.getElementById("play-music-button");
-        const youtubePlayer = document.getElementById("youtube-player");
-
-        // Reproducir la canción al hacer clic en el botón
-        playMusicButton.addEventListener("click", () => {
-            // Cambiar la URL para forzar la reproducción
-            youtubePlayer.src += "&autoplay=1";
-            playMusicButton.textContent = "Música sonando 🎵";
-            playMusicButton.disabled = true; // Deshabilitar el botón después de hacer clic
-        });
-    </script>
 </body>
 </html>
