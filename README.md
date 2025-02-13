@@ -138,6 +138,45 @@
                 opacity: 0;
             }
         }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .message {
+                font-size: 30px;
+            }
+
+            .heart {
+                font-size: 60px;
+            }
+
+            .download-button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .message {
+                font-size: 24px;
+            }
+
+            .heart {
+                font-size: 50px;
+            }
+
+            .download-button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+        /* Estilo para ocultar el reproductor de YouTube */
+        .youtube-player {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            visibility: hidden;
+        }
     </style>
     <!-- Enlace a la fuente de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -186,5 +225,16 @@
             <button class="download-button">Para ti</button>
         </a>
     </div>
+
+    <!-- Reproductor de YouTube (oculto) -->
+    <iframe
+        class="youtube-player"
+        width="0"
+        height="0"
+        src="https://www.youtube.com/embed/ybPNgfNtNLA?start=50&autoplay=1&loop=1&playlist=ybPNgfNtNLA"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
